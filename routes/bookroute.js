@@ -71,7 +71,7 @@ router.delete('/deleteBook/:id' , async(req,res)=>{
             res.status(200).json({message  :"deleted Successfully"})
 
         })
-    } catch (error) {
+    }catch (error) {
         console.log(error) ;
     }
 })
