@@ -13,6 +13,7 @@ app.use('/book', postBookRouter);
 
 app.get("/", (req, res) => 
     { 
+    res.send("Welcome to home page of book backend");
     app.use(express.static(path.resolve(__dirname, "frontend", "build"))); 
     res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
